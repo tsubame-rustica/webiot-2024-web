@@ -7,6 +7,9 @@
 
     --not-selected-color: #5e5e5e;
     --selected-color    : #222222;
+
+
+    --footer-list-num   : 5;
 }
 
 :root {
