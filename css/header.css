@@ -1,0 +1,46 @@
+@import url(./variable.css);
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow:  9px 9px 16px #d9d9d9,
+                -9px -9px 16px #ffffff;
+}
+
+header .date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+header .date .calendar-icon {
+    height: 60%;
+    aspect-ratio: 1;
+}
+
+header .date .calendar-icon img {
+    height: 100%;
+    object-fit: contain;
+}
+
+header .weather {
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+header .weather img {
+    width: 60%;
+    padding: 20%;
+}
