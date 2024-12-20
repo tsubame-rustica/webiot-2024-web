@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/header.css">
+        <link rel="stylesheet" href="/src/css/common.css">
+        <link rel="stylesheet" href="/src/css/record.css">
+        <link rel="stylesheet" href="/src/css/footer.css">
+        <title>WebIoT 2024</title>
+    </head>
+    <body>
+        <header>
+            <div class="date">
+                <div class="calendar-icon"><img src="/src/pic/calendar.svg" alt="カレンダーのアイコン"></div>
+                <div class="date-ymd" id="date">1970/1/1（木）</div>
+            </div>
+            <div class="weather"><img id="weatherIcon" src="/src/pic/sun.svg" alt="天気のアイコン"></div>
+            <div id="details"></div>
+        </header>
+        <main>
+            <form action="" method="post">
+                <div class="image">
+                    <img src="/src/pic/thumbnail.png" alt="">
+                </div>
+                <div id="postContent">
+                    <div id="dateOuter">
+                        <label for="date">日付</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="tempOuter">
+                        <label for="temp">気温</label>
+                        <input type="number" name="temp" id="temp" step="0.1">
+                        <span>℃</span>
+                    </div>
+                    <div class="humidityOuter">
+                        <label for="humidity">土壌湿度</label>
+                        <input type="number" name="humidity" id="humidity" step="0.1">
+                        <span>%</span>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="menu-list">
+                <ul>
+                    <li class="home selected"><a href=""><img src="/src/pic/home.svg" alt=""></a></li>
+                    <li class="book"><a href=""><img src="/src/pic/book.svg" alt=""></a></li>
+                    <li class="archivements"><a href=""><img src="/src/pic/bar.svg" alt=""></a></li>
+                    <li class="notification"><a href=""><img src="/src/pic/notification.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="/src/js/data.js"></script>
+    </body>
+</html>
