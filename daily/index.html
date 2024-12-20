@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/header.css">
+        <link rel="stylesheet" href="/src/css/common.css">
+        <link rel="stylesheet" href="/src/css/daily.css">
+        <link rel="stylesheet" href="/src/css/footer.css">
+        <title>日記</title>
+    </head>
+<body>
+    <header>
+        <div class="date">
+            <div class="calendar-icon"><img src="/src/pic/calendar.svg" alt="カレンダーのアイコン"></div>
+            <div class="date-ymd" id="date">1970/1/1（木）</div>
+        </div>
+        <div class="weather"><img id="weatherIcon" src="/src/pic/sun.svg" alt="天気のアイコン"></div>
+        <div id="details"></div>
+    </header>
+    <main>
+        <div class="month-list">
+            <ul>
+                <li><a href="">12月</a></li>
+                <li><a href="">11月</a></li>
+                <li><a href="">10月</a></li>
+                <li><a href="">9月</a></li>
+                <li><a href="">8月</a></li>
+                <li><a href="">7月</a></li>
+            </ul>
+        </div>
+        <div class="daily">
+            <div class="daily-header">
+                <div class="date">2024年12月22日</div>
+                <div class="day-count">1日目</div>
+            </div>
+            <div class="thumbnail">
+                <img src="/src/pic/thumbnail.png" alt="">
+            </div>
+            <div class="status"></div>
+            <div class="memo"></div>
+            <div class="arrow">
+                <div class="next"></div>
+                <div class="prev"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu-list">
+            <ul>
+                <li class="home"><a href=""><img src="/src/pic/home.svg" alt=""></a></li>
+                <li class="book selected"><a href=""><img src="/src/pic/book.svg" alt=""></a></li>
+                <li class="archivements"><a href=""><img src="/src/pic/bar.svg" alt=""></a></li>
+                <li class="notification"><a href=""><img src="/src/pic/notification.svg" alt=""></a></li>
+            </ul>
+        </div>
+    <script src="/src/js/data.js"></script>
+</body>
+</html>

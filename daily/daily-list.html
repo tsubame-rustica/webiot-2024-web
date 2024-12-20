@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/src/css/header.css">
+        <link rel="stylesheet" href="/src/css/common.css">
+        <link rel="stylesheet" href="/src/css/daily-list.css">
+        <link rel="stylesheet" href="/src/css/footer.css">
+        <title>記録一覧</title>
+    </head>
+<body>
+    <header>
+        <div class="date">
+            <div class="calendar-icon"><img src="/src/pic/calendar.svg" alt="カレンダーのアイコン"></div>
+            <div class="date-ymd" id="date">1970/1/1（木）</div>
+        </div>
+        <div class="weather"><img id="weatherIcon" src="/src/pic/sun.svg" alt="天気のアイコン"></div>
+        <div id="details"></div>
+    </header>
+    <main>
+        <h2>成長の記録</h2>
+        <div class="daily-list">
+            <ul>
+                <li>
+                    <div class="daily">
+                        <div class="daily-cover">
+                            <div class="thumbnail">
+                                <img src="/src/pic/thumbnail.png" alt="">
+                            </div>
+                            <div class="daily-data">
+                                <div class="title" id="bookTitle"><h2>ミニトマト</h2></div>
+                            </div>
+                            <div class="click">
+                            </div>
+                        </div>
+                        <div class="page-outer">
+                            <div class="page"></div>
+                        </div>
+                    </div>
+                    <span id="title">ミニトマト</span>
+                </li>
+                <li>
+                    <div class="daily">
+                        <div class="daily-cover">
+                            <div class="thumbnail">
+                                <img src="/src/pic/thumbnail.png" alt="">
+                            </div>
+                            <div class="daily-data">
+                                <div class="title" id="bookTitle"><h2>ミニトマト</h2></div>
+                            </div>
+                            <div class="click">
+                            </div>
+                        </div>
+                        <div class="page-outer">
+                            <div class="page"></div>
+                        </div>
+                    </div>
+                    <span id="title">ミニトマト</span>
+                </li>
+            </ul>
+        </div>
+        <div class="add-btn">
+            <a href="/daily/daily-add.html"><img src="/src/pic/plus.svg" alt="追加ボタン"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="menu-list">
+            <ul>
+                <li class="home"><a href=""><img src="/src/pic/home.svg" alt=""></a></li>
+                <li class="book selected"><a href=""><img src="/src/pic/book.svg" alt=""></a></li>
+                <li class="archivements"><a href=""><img src="/src/pic/bar.svg" alt=""></a></li>
+                <li class="notification"><a href=""><img src="/src/pic/notification.svg" alt=""></a></li>
+            </ul>
+        </div>
+    <script src="/src/js/data.js"></script>
+</body>
+</html>
