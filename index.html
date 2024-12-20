@@ -3,25 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/src/css/header.css">
+        <link rel="stylesheet" href="/src/css/common.css">
+        <link rel="stylesheet" href="/src/css/main.css">
+        <link rel="stylesheet" href="/src/css/footer.css">
         <title>WebIoT 2024</title>
     </head>
     <body>
         <header>
             <div class="date">
-                <div class="calendar-icon"><img src="./pic/calendar.svg" alt="カレンダーのアイコン"></div>
-                <div class="date-ymd" id="date">1970年1月1日</div>
+                <div class="calendar-icon"><img src="/src/pic/calendar.svg" alt="カレンダーのアイコン"></div>
+                <div class="date-ymd" id="date">1970/1/1（木）</div>
             </div>
-            <div class="weather"><img id="weatherIcon" src="./pic/sun.svg" alt="天気のアイコン"></div>
+            <div class="weather"><img id="weatherIcon" src="/src/pic/sun.svg" alt="天気のアイコン"></div>
             <div id="details"></div>
         </header>
         <main>
             <div class="daily">
                 <div class="daily-cover">
                     <div class="thumbnail">
-                        <img src="./pic/thumbnail.png" alt="">
+                        <img src="/src/pic/thumbnail.png" alt="">
                     </div>
                     <div class="daily-data">
                         <div class="title"><h2>ミニトマト</h2></div>
@@ -43,14 +44,13 @@
         <footer>
             <div class="menu-list">
                 <ul>
-                    <li class="home selected"><a href=""><img src="/pic/home.svg" alt=""></a></li>
-                    <li class="book"><a href=""><img src="/pic/book.svg" alt=""></a></li>
-                    <li class="camera"><a href=""><img src="/pic/camera.svg" alt=""></a></li>
-                    <li class="archivements"><a href=""><img src="/pic/bar.svg" alt=""></a></li>
-                    <li class="notification"><a href=""><img src="/pic/notification.svg" alt=""></a></li>
+                    <li class="home selected"><a href=""><img src="/src/pic/home.svg" alt=""></a></li>
+                    <li class="book"><a href=""><img src="/src/pic/book.svg" alt=""></a></li>
+                    <li class="archivements"><a href=""><img src="/src/pic/bar.svg" alt=""></a></li>
+                    <li class="notification"><a href=""><img src="/src/pic/notification.svg" alt=""></a></li>
                 </ul>
             </div>
         </footer>
-        <script src="./js/data.js"></script>
+        <script src="/src/js/data.js"></script>
     </body>
 </html>

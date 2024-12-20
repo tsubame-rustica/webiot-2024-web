@@ -11,7 +11,7 @@
     --selected-color        : #222222;
     --selected-color-filter : brightness(0) saturate(100%) invert(11%) sepia(2%) saturate(381%) hue-rotate(315deg) brightness(96%) contrast(94%);
 
-    --footer-list-num   : 5;
+    --footer-list-num   : 4;
 }
 
 :root {

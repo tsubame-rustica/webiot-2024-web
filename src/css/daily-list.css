@@ -1,0 +1,126 @@
+@import url(./variable.css);
+
+main h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+main li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    aspect-ratio: 2 / 3;
+}
+
+.daily {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem 0.125rem 0.25rem 0.25rem;
+    overflow: hidden;
+}
+
+.daily * {
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.daily .page-outer {
+    position: relative;
+    top: -99.5%;
+    width: 5%;
+    height: 96%;
+    z-index: -1;
+
+}
+
+.daily .page-outer .page {
+    width: 100%;
+    height: 100%;
+    border: 0.2rem solid #2F7D1B;
+    background-size: auto auto;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.daily .daily-cover {
+    position: relative;
+    width: calc(98% - 0.5rem);
+    height: 100%;
+    left: 5%;
+    background-color: var(--base-color);
+    border-right: 0.5rem solid;
+    border-image: linear-gradient(to left, #2F7D1B, #389321) 20%;
+    border-radius: 0.25rem;
+}
+
+.daily .daily-cover .thumbnail {
+    left: 0.5rem;
+    width: 100%;
+    height: 35%;
+}
+
+.daily .daily-cover .thumbnail img {
+    width: 80%;
+    margin: 10%;
+}
+
+.daily .daily-cover .daily-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.daily .daily-cover .daily-data > * {
+    width: max-content;
+    padding: 1rem 1.5em 0 1.5em;
+    border-bottom: 1px solid;
+
+    > * {
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+main li > span {
+    padding: 0.5rem 0;
+}
+
+main .add-btn {
+    position: fixed;
+    width: 15vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    bottom: calc(1rem + var(--footer-height));
+    right: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow:  5px 5px 10px #cacaca,
+             -5px -5px 10px #f6f6f6;
+}
+
+main .add-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+main .add-btn img {
+    width: 100%;
+    height: 100%;
+}
