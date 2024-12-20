@@ -38,10 +38,93 @@ main .month-list ul li a {
 }
 
 main .daily {
+    position: relative;
     width: 100%;
     height: 85%;
     margin: 2% 0 6% 0;
+    font-family: 'Zen Kurenaido', sans-serif;
     overflow: hidden;
     overflow-y: scroll;
     background-color: #E8E2D3;
+}
+
+main .daily .daily-header {
+    width: calc(100% - 2rem);
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+main .daily .thumbnail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .daily .thumbnail img {
+    width: 60%;
+}
+
+main .daily .status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+main .daily .memo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+main .daily :where(.memo, .archivements) > *:nth-child(1) {
+    width: max-content;
+    padding: 0 1rem;
+}
+
+main .daily .memo .text {
+    width: 80%;
+    height: 5rem;
+    margin: .5rem auto;
+    margin-top: 0;
+    overflow-y: scroll;
+}
+
+main .daily .archivements .text {
+    width: 80%;
+    height: 2rem;
+    margin: .5rem auto;
+    margin-top: 0;
+    overflow-y: scroll;
+}
+
+main .daily :where(.memo, .archivements) .text * {
+    margin: 0;
+    text-decoration: underline;
+}
+
+main .daily .arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 1%;
+}
+
+main .daily .arrow > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1rem;
+}
+
+main .daily .arrow > * > span {
+    position: relative;
+    bottom: 1px;
 }
