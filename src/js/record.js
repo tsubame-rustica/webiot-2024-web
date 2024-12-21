@@ -7,6 +7,8 @@
 //     channel.onmessage = getEnvData;
 // }
 
+const gasFetchUrl = 'https://script.google.com/macros/s/AKfycbyAgVER_UJtUnMGd-aVp6mIKdGIdm9wd2kzIwpoS8rOrL3taUO-sTtY5aj0t7jRM4OSYg/exec';
+
 const todayDate = document.getElementById('recordDate');
 const temperature = document.getElementById('temp');
 const humidity = document.getElementById('humidity');
@@ -28,7 +30,7 @@ submitBtn.addEventListener('click', function() {
         memo: recordMemo
     };
 
-    // channel.send(JSON.stringify(recordData));
+    
 }, false);
 
 
@@ -40,4 +42,17 @@ function getEnvData(msg) {
     const envData = JSON.parse(data);
     temperature.innerHTML = envData.temperature;
     humidity.innerHTML = envData.humidity;
+}
+
+function fetchPost(data) {
+
+    const options = {
+        'method': 'post',
+        'headers': {
+            'Content-Type': 'application/json'
+        },
+        'payload': JSON.stringify(data)
+    }
+
+    res = UrlFetchApp.fetch(gasFetchUrl, options);
 }
