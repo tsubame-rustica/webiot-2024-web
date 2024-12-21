@@ -1,6 +1,8 @@
 @import url(./variable.css);
 
-main {
+main .containor {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -138,6 +140,69 @@ main {
     font-size: 120%;
     border-radius: 9999px;
     background: #ffffff;
+    box-shadow:  8px 8px 40px #d6d6d6,
+                -8px -8px 40px #ffffff;
+}
+
+main #modal {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100svh - var(--header-height) - var(--footer-height));
+    top: 0;
+    background-color: rgba(34, 34, 34, 0.4);
+}
+
+main #modal .modal-inner {
+    position: relative;
+    width: 60%;
+    aspect-ratio: 4 / 3;
+    background-color: #ececec;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+main #modal .modal-inner .confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+}
+
+main #modal .modal-inner .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    padding: 0 10%;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+main #modal .modal-inner .confirm-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 120%;
+    text-align: center;
+}
+
+main #modal .modal-inner .confirm-btn button {
+    width: 40%;
+    height: 60%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #fff;
+    border-radius: 9999px;
+    background-color: #5bfaff;
     box-shadow:  8px 8px 40px #d6d6d6,
                 -8px -8px 40px #ffffff;
 }
