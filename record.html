@@ -19,6 +19,7 @@
             <div id="details"></div>
         </header>
         <main>
+            <h2>今日の記録</h2>
             <form action="" method="post">
                 <div class="image">
                     <img src="/src/pic/thumbnail.png" alt="">
@@ -26,19 +27,26 @@
                 <div id="postContent">
                     <div id="dateOuter">
                         <label for="date">日付</label>
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="recordDate">
+                        <span>　</span>
                     </div>
-                    <div class="tempOuter">
+                    <div id="tempOuter">
                         <label for="temp">気温</label>
                         <input type="number" name="temp" id="temp" step="0.1">
                         <span>℃</span>
                     </div>
-                    <div class="humidityOuter">
+                    <div id="humidityOuter">
                         <label for="humidity">土壌湿度</label>
                         <input type="number" name="humidity" id="humidity" step="0.1">
                         <span>%</span>
                     </div>
+                    <div id="memoOuter">
+                        <label for="memo">メモ</label>
+                        <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
+                <div class="button">
+                    <button type="button" id="recordSubmitBtn">記録する！</button>
             </form>
         </main>
         <footer>
@@ -52,5 +60,6 @@
             </div>
         </footer>
         <script src="/src/js/data.js"></script>
+        <script src="/src/js/record.js"></script>
     </body>
 </html>

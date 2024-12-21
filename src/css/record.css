@@ -1,1 +1,84 @@
 @import url(./variable.css);
+
+main h2 {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+main form .image img {
+    width: 60%;
+}
+
+main form #postContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form #postContent > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+    padding: 0.5rem 0;
+}
+
+main form #postContent div :nth-child(1) {
+    width: 40%;
+}
+
+main form #postContent div input {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+main form #postContent div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+main form #postContent div textarea {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+    left: 1px;
+}
+
+main form div.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+main form div.button button {
+    width: 30%;
+    padding: 0.4rem 0;
+    background-color: #5bfaff;
+    border: 0;
+    border-radius: 8px;
+    box-shadow:  8px 8px 40px #d6d6d6,
+                -8px -8px 40px #ffffff;
+    font-weight: bold;
+    color: #fff;
+}

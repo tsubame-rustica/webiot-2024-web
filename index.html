@@ -19,26 +19,40 @@
             <div id="details"></div>
         </header>
         <main>
-            <div class="daily">
-                <div class="daily-cover">
-                    <div class="thumbnail">
-                        <img src="/src/pic/thumbnail.png" alt="">
+            <div class="containor">
+                <div class="daily">
+                    <div class="daily-cover">
+                        <div class="thumbnail">
+                            <img src="/src/pic/thumbnail.png" alt="">
+                        </div>
+                        <div class="daily-data">
+                            <div class="title"><h2>ミニトマト</h2></div>
+                            <div class="month"><h3>11月</h3></div>
+                        </div>
+                        <div class="click">
+                            <span>クリックして開く</span>
+                        </div>
                     </div>
-                    <div class="daily-data">
-                        <div class="title"><h2>ミニトマト</h2></div>
-                        <div class="month"><h3>11月</h3></div>
-                    </div>
-                    <div class="click">
-                        <span>クリックして開く</span>
+                    <div class="page-outer">
+                        <div class="page"></div>
                     </div>
                 </div>
-                <div class="page-outer">
-                    <div class="page"></div>
+                <div class="record">
+                    <div class="record-btn"><button class="record-btn-inner">記録する</button></div>
+                    <div class="record-btn"><button class="watering-btn" id="wateringBtn">水やり</button></div>
                 </div>
             </div>
-            <div class="record">
-                <div class="record-btn"><button class="record-btn-inner">記録する</button></div>
-                <div class="record-btn"><button>テキスト</button></div>
+            <div class="modal" id="modal">
+                <div class="modal-inner">
+                    <div class="confirm">
+                        <div class="text" id="confirmText">
+                            水やりをしますか？or水やりをする必要はなさそうです
+                        </div>
+                        <div class="confirm-btn" id="confirmBtn">
+                            <button id="confirmBtnInner"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
@@ -52,5 +66,6 @@
             </div>
         </footer>
         <script src="/src/js/data.js"></script>
+        <script src="/src/js/watering.js"></script>
     </body>
 </html>
